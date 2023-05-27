@@ -1,4 +1,4 @@
-*,*::before,*::after
+*
 {
     box-sizing: border-box;
     font-family:"Courier New",monospace;
@@ -14,17 +14,17 @@ body
 }
 .calc-grid
 {
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows:minmax(100px,auto) repeat(6,70px);
+    grid-template-columns: repeat(4,24vw);
+    grid-template-rows:minmax(25vh,auto) repeat(6,12vh);
 }
 .calc-grid>button
 {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 5vh;
     border: 1px solid white;
     outline:none;
     background-color: rgba(255, 255, 255, .75);
@@ -43,33 +43,15 @@ body
      justify-content: space-around;
      word-wrap:break-word;
      word-break:break-all;
-     padding: 10px;
+     padding: 1vh;
 }
 .output>.op1
 {
     color: rgba(255, 255, 255, .75);
-    font-size: 1.5rem;
+    font-size: 7vh;
 }
 .output>.op2
 {
     color: rgba(255, 255, 255);
-    font-size: 2.5rem;
+    font-size: 10vh;
 }
-/* .memory
-{
-    grid-column: 1/-1;
-    background-color: rgba(0, 0, 0, .75);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-.memory>button
-{
-    
-     cursor: pointer;
-    font-size: 2em;
-    border: 1px solid white;
-    outline:none;
-    background-color: rgba(255, 255, 255, .75);
-} 
-*/
